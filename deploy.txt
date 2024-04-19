@@ -6,7 +6,7 @@ If you don't have it, you can download it here: https://nodejs.org/en/download
 Install like this: https://kinsta.com/blog/how-to-install-node-js/
 
 
-1. Open cmd and navigate to the root directory of the FirebaseFiles
+1. Open cmd and navigate to the src directory
 
 2. Run 'firebase login' in the cmd window. This should open a google window to authenticate.
 
