@@ -26,12 +26,27 @@
   </head>
   <body>
 
-    <h1>Hello World</h1>
-    <button onclick="googleLogin()">
-      Login with Google
-    </button>
-    <script src="app.js">
-      
-    </script>
+    <div id="login">
+      <div class="header">
+        <h1>Account Login</h1>
+        <form>
+          <div class="group">
+            <input type="text" id="email" placeholder="Email"><br>
+            <input type="text" id="password" placeholder="Password">
+
+            <div id="button_container">
+              <button onclick="login()">Login</button>
+              <button onclick="register()">Register</button>
+            </div>
+          </div>
+        </form>
+        <button onclick="googleLogin()">
+          Login with Google
+        </button>
+        <script src="index.js">
+          
+        </script>
+      </div>
+    </div>
   </body>
 </html>
