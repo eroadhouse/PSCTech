@@ -1,0 +1,31 @@
+<div class="navBar">
+    <nav>
+        <img src="logoHereIfThenWant.png" class="logo">
+        <ul>
+            <li><a href="#">Last 90 Days</a></li>
+            <li><a href="#">Last Week</a></li>
+            <li><a href="#">Manage Techs</a></li>
+            <li><a href="#">Add New Jobs</a></li>
+        </ul>
+        <img src="userNameGoesHere.png" class="user-name" onclick="toggleMenu()">
+        
+        <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+                <a href="#" class="sub-menu-link">
+                    <img src="defaultLogOutSymbolImageHere.png">
+                    <p>Log Out</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<script>
+    let subMenu = document.getElementById("subMenu");
+
+    function toggleMenu(){
+        subMenu.classList.toggle("open-menu");
+    }
+    
+</script>
