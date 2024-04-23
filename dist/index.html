@@ -21,32 +21,45 @@
       initialize the SDK after all desired features are loaded, set useEmulator to false
       to avoid connecting the SDK to running emulators.
     -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <script defer src="/__/firebase/init.js?useEmulator=false"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
 
   </head>
   <body>
 
     <div id="login">
-      <div class="header">
-        <h1>Account Login</h1>
-        <form>
-          <div class="group">
-            <input type="text" id="email" placeholder="Email"><br>
-            <input type="text" id="password" placeholder="Password">
-
-            <div id="button_container">
-              <button onclick="login()">Login</button>
-              <button onclick="register()">Register</button>
-            </div>
-          </div>
-        </form>
-        <button onclick="googleLogin()">
-          Login with Google
-        </button>
-        <script src="index.js">
-          
-        </script>
-      </div>
+    <div class="header">
+      <h1>Account Login</h1>
     </div>
+    <form>
+      <div class="group">
+        <input id="txtEmail" type="email">
+        <label>Email</label>
+      </div>
+      <div class="group">
+        <input id="txtPassword" type="password">
+        <label>Password</label>
+      </div>
+      <div id="divLoginError" class="group">
+        <div id="lblLoginErrorMessage" class="errorlabel">Error message</div>
+      </div>
+      <button id="btnLogin" type="button" class="button buttonBlue">Log in</button>
+      <button id="btnSignup" type="button" class="button buttonBlue">Sign up</button>
+    </form>
+    </div>
+
+    <div id="app">
+      <div class="header">
+        <h1>You're logged in!</h1>
+      </div>
+      <form>
+        <div class="group">
+          <div id="lblAuthState" class="authlabel"></div>
+        </div>
+        <button id="btnLogout" type="button" class="button buttonBlue">Log out</button>
+      </form>
+    </div>
+
+    <script src="bundle.js"></script>
   </body>
 </html>
